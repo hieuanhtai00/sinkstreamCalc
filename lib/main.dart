@@ -32,9 +32,7 @@ class MyCalculator extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return StreamBuilder<Calculator>(
-      builder: (_, calc) {
-        return Column(
+    return Column(
           children: [
             Expanded(
               child: Container(
@@ -182,8 +180,6 @@ class MyCalculator extends StatelessWidget {
               flex: 8,
             ),
           ],
-        );
-      },
-    );
+      );
   }
 }
